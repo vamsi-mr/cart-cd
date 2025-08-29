@@ -1,0 +1,15 @@
+### ConfigMap
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: catalogue
+  namespace: roboshop
+  labels:
+    component: catalogue
+    project: roboshop
+    tier: app
+data:
+  REDIS_HOST: "redis" 
+  CATALOGUE_HOST: "catalogue" 
+  CATALOGUE_PORT: "8080"
+  
